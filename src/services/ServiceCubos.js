@@ -96,7 +96,7 @@ export default class ServiceCubos {
         return new Promise(function(resolve){
             var request = "api/Compra/InsertarPedido/"+id;
             var url = Global.urlCubos + request;
-            axios.post(url,{headers}).then(response=>{
+            axios.post(url,null,{headers}).then(response=>{
                 resolve(response);
             })
         })
